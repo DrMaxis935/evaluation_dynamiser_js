@@ -1,45 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Little Game</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description" content="Dice Roll">
-    <meta property="og:title" content="Dice Game"/>
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta property="og:description" content="A round by round dice game for 2 players">
-    <meta property="og:site_name" content="Dice Roll" >
-    <meta property="og:country-name" content="en_EN">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Dice Roll" />
+    <meta property="og:title" content="Dice Game" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content="A round by round dice game for 2 players"
+    />
+    <meta property="og:site_name" content="Dice Roll" />
+    <meta property="og:country-name" content="en_EN" />
     <meta name="google-site-verification" content="" />
 
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<!DOCTYPE html>
-<body>
-
+  <!DOCTYPE html>
+  <body>
     <main class="container">
-        <header>
-            <div class="header-wrapper">
-                NEW GAME
-                <button type="button" class="btn btn-primary" id="randomScore">Random Score</button>
-                <input type="number" id="randomScoreValue" ></input>
-            </div>
-        </header>
+      <header>
+        <div class="header-wrapper">
+          NEW GAME
+          <i class="bi bi-plus-circle"></i>
+          <button type="button" class="btn btn-light" id="randomScore">
+            <img src="./icons/plus-circle.svg" />
+            New Game
+          </button>
+        </div>
+      </header>
 
+      <div class="mainContainer">
+        <div class="player1Side">
+          <h2>PLAYER 1</h2>
+          <h3 class="score" id="player1Score">35</h3>
 
-        <footer>
+          <input type="number" id="randomScoreValue" />
+        </div>
 
-        </footer>
-</main>
+        <div class="player2Side">
+          <h2>PLAYER 2</h2>
+          <h3 class="score" id="player2Score">55</h3>
 
-<script src="script.js"></script>
-</body>
+          <input type="number" id="randomScoreValue" />
+        </div>
+
+        <button type="button" class="btn btn-light" id="randomScore">
+          <img src="./icons/arrow-repeat.svg" />
+          Roll Dice
+        </button>
+
+        <button type="button" class="btn btn-light" id="randomScore">
+          <img src="./icons/box-arrow-in-down.svg" />
+          Hold
+        </button>
+      </div>
+      <footer></footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
