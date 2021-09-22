@@ -1,7 +1,18 @@
-const root = document.getElementById('root')
+let totalScorePlayer1
+let currentScorePlayer1
+let totalScorePlayer2
+let currentScorePlayer2
+let diceRoll
 
-alert('Nique!')
 
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+document.getElementById("randomScore").addEventListener("click", function() {
+    currentScorePlayer1 = randomInteger(0, 12);
+    document.getElementById("randomScoreValue").setAttribute('value',currentScorePlayer1) ;
+  });
 
 
 
