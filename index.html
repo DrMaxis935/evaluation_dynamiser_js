@@ -37,42 +37,49 @@
   <body>
     <main class="container">
       <header>
-        <div class="header-wrapper">
-          NEW GAME
-          <i class="bi bi-plus-circle"></i>
-          <button type="button" class="btn btn-light" id="randomScore">
-            <img src="./icons/plus-circle.svg" />
-            New Game
-          </button>
-        </div>
+        <div class="header-wrapper"></div>
       </header>
 
       <div class="mainContainer">
-        <div class="player1Side">
+        <div class="playerSide">
           <h2>PLAYER 1</h2>
           <h3 class="score" id="player1Score">35</h3>
 
-          <input type="number" id="randomScoreValue" />
+          <div class="currentScoreContainer">
+            <p>Current</p>
+            <h5 class="currentScore" type="number" id="randomScoreValue">0</h5>
+          </div>
         </div>
 
-        <div class="player2Side">
+        <div class="center">
+          <button type="button" class="btn btn-light" id="randomScore">
+            <img class="Icons" src="./icons/plus-circle.svg" />
+            NEW GAME
+          </button>
+
+          <img class="dice" src="./DiceSides/dice-1.png" />
+
+          <button type="button" class="btn btn-light" id="randomScore">
+            <img class="Icons" src="./icons/arrow-repeat.svg" />
+            ROLL DICE
+          </button>
+
+          <button type="button" class="btn btn-light" id="randomScore">
+            <img class="Icons" src="./icons/box-arrow-in-down.svg" />
+            HOLD
+          </button>
+        </div>
+        <div class="playerSide">
           <h2>PLAYER 2</h2>
+          <div class=""></div>
           <h3 class="score" id="player2Score">55</h3>
 
-          <input type="number" id="randomScoreValue" />
+          <div class="currentScoreContainer">
+            <p>Current</p>
+            <h5 class="currentScore" type="number" id="randomScoreValue"></h5>
+          </div>
         </div>
-
-        <button type="button" class="btn btn-light" id="randomScore">
-          <img src="./icons/arrow-repeat.svg" />
-          Roll Dice
-        </button>
-
-        <button type="button" class="btn btn-light" id="randomScore">
-          <img src="./icons/box-arrow-in-down.svg" />
-          Hold
-        </button>
       </div>
-      <footer></footer>
     </main>
 
     <script src="script.js"></script>
