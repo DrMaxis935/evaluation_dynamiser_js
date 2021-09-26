@@ -28,6 +28,8 @@ if (gameLaunched == false) {
 }
 
 function newGame() {
+  playerName1.innerHTML = "<h2>PLAYER 1<h2>";
+  playerName2.innerHTML = "<h2>PLAYER 2<h2>";
   resetCurrentScore();
   resetTotalScore();
   swapPlayerTurn();
