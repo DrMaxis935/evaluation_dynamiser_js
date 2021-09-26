@@ -36,51 +36,55 @@
   <!DOCTYPE html>
   <body>
     <main class="container">
-      <header>
-        <div class="header-wrapper"></div>
-      </header>
-
-      <div class="mainContainer">
+      <div class="mainContainer" id="mainContainer">
         <div class="playerSide">
-          <h2>PLAYER 1</h2>
-          <h3 class="score" id="player1Score">35</h3>
+          <div class="playerName" id="playerName1">
+            <h2>PLAYER 1</h2>
+          </div>
+          <h3 class="score" id="player1Score">0</h3>
 
           <div class="currentScoreContainer">
             <p>Current</p>
-            <h5 class="currentScore" type="number" id="randomScoreValue">0</h5>
+            <h3 class="currentScore" type="number" id="currentScoreP1">0</h3>
           </div>
         </div>
 
         <div class="center">
-          <button type="button" class="btn btn-light" id="randomScore">
+          <div id="newGame">
+          <button type="button" class="btn btn-light">
             <img class="Icons" src="./icons/plus-circle.svg" />
             NEW GAME
           </button>
+        </div>
+          <img class="dice" src="./Images/dice-1.png" id="dice" />
 
-          <img class="dice" src="./DiceSides/dice-1.png" />
-
-          <button type="button" class="btn btn-light" id="randomScore">
+          <div id="rollDice">
+          <button type="button" class="btn btn-light">
             <img class="Icons" src="./icons/arrow-repeat.svg" />
             ROLL DICE
           </button>
+          </div>
 
-          <button type="button" class="btn btn-light" id="randomScore">
+          <div id="hold">
+          <button type="button" class="btn btn-light" >
             <img class="Icons" src="./icons/box-arrow-in-down.svg" />
             HOLD
           </button>
         </div>
+        </div>
         <div class="playerSide">
-          <h2>PLAYER 2</h2>
+          <div class="playerName" id="playerName2">
+            <h2>PLAYER 2</h2>
+          </div>
           <div class=""></div>
-          <h3 class="score" id="player2Score">55</h3>
+          <h3 class="score" id="player2Score">0</h3>
 
           <div class="currentScoreContainer">
             <p>Current</p>
-            <h5 class="currentScore" type="number" id="randomScoreValue"></h5>
+            <h3 class="currentScore" type="number" id="currentScoreP2">0</h3>
           </div>
         </div>
       </div>
-    </main>
 
     <script src="script.js"></script>
   </body>

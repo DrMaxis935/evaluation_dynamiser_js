@@ -2,13 +2,6 @@ html {
   font-family: "Lato", sans-serif;
 }
 
-.header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 body {
   justify-content: center;
   overflow-x: hidden;
@@ -16,7 +9,7 @@ body {
 }
 
 .container {
-  padding: 5% 15% 5% 15%;
+  padding: 2% 5% 2% 5%;
   background-color: saddlebrown;
   margin-top: 10%;
   width: 100vw;
@@ -31,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 80%;
+  height: 100%;
 }
 
 .center {
@@ -47,8 +40,8 @@ body {
   margin-bottom: 6rem;
   filter: drop-shadow(0 0 0.75rem grey);
   border-radius: 6px;
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 .Icons {
@@ -60,10 +53,11 @@ body {
 
 .score {
   font-size: 7rem;
-  font-weight: 200;
+  font-weight: 100;
   color: crimson;
   margin-bottom: 12rem;
 }
+
 .currentScoreContainer {
   width: 40%;
   display: flex;
@@ -75,7 +69,10 @@ body {
 }
 
 .currentScoreContainer p {
+  padding-top: 0.2rem;
+  display: flex;
   align-items: center;
+  justify-content: center;
   color: black;
 }
 
@@ -108,4 +105,42 @@ h2 {
   width: 1rem;
   border-radius: 50%;
   background-color: crimson;
+}
+
+.dotWin {
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  background-color: lime;
+}
+
+.playerName {
+  display: flex;
+  align-items: center;
+  min-width: 11rem;
+}
+.playerName .dot {
+  margin-left: 0.8rem;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(3px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-6px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(6px, 0, 0);
+  }
 }
